@@ -65,7 +65,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="opcion1.html">Opcion 1</a></li>
-                        <li><a href="opcion2.php">Opcion 2</a></li> 
+                        <li><a href="opcion2.php">Listar</a></li> 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
