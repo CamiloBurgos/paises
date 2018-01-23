@@ -49,7 +49,7 @@
 			
          
         </head>
-        <body text="#330000">
+        <body>
         <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
                     <div class="navbar-header">
@@ -76,8 +76,10 @@
               </div>
         </nav>
 			<br>
-				<center><table border="2" >
-					<tr> 
+				<center><table border="2" style="background-color:#D5DBDB;">
+				
+					<tr style="background-color:#AEB6BF;"> 
+					
 						<td><center><h2>Id</h2></center></td>
 						<td><center><h2>Pais</h2></center></td>
 						<td><center><h2>Capital</h2></center></td>
