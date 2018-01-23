@@ -40,7 +40,7 @@
             <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 			<meta charset="UTF-8" />
             <!--<link rel="stylesheet" type="text/css" href="css/index.css"> -->
-            <title>App Paises</title>
+            <title>Paises app</title>
             <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
             <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
             <script src="js/jquery.min.js"></script> 
@@ -75,41 +75,32 @@
 
               </div>
         </nav>
+			<br>
+				<center><table border="2" >
+					<tr> 
+						<td><center><h2>Id</h2></center></td>
+						<td><center><h2>Pais</h2></center></td>
+						<td><center><h2>Capital</h2></center></td>
+						<td><center><h2>Gentilicio</h2></center></td>						
+					</tr>
+					
+					<?php 
+					$sql="SELECT * from ciudades";
+					$result=mysqli_query($conexion,$sql);
 
-			
+					while($mostrar=mysqli_fetch_array($result)){
+					 ?>
 
-	
-<br>
-
-	<center><table border="2" >
-		<tr> 
-			<td><center><h2>Id</h2></center></td>
-			<td><center><h2>Pais</h2></center></td>
-			<td><center><h2>Capital</h2></center></td>
-			<td><center><h2>Gentilicio</h2></center></td>
-			
-		</tr>
-
-		<?php 
-		$sql="SELECT * from ciudades";
-		$result=mysqli_query($conexion,$sql);
-
-		while($mostrar=mysqli_fetch_array($result)){
-		 ?>
-
-		<tr>
-			<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_id'] ?></h4></center></td>
-			<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_pais'] ?></h4></center></td>
-			<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_nombre'] ?></h4></center></td>
-			<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_gente'] ?></h4></center></td>
-			
-		</tr>
-	<?php 
-	}
-	 ?>
-	</table></center>
-
-				
+					<tr>
+						<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_id'] ?></h4></center></td>
+						<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_pais'] ?></h4></center></td>
+						<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_nombre'] ?></h4></center></td>
+						<td class="col-xs-2"><center><h4><?php echo $mostrar['ciudad_gente'] ?></h4></center></td>						
+					</tr>
+				<?php 
+				}
+				 ?>
+				</table></center>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
