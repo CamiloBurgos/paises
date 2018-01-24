@@ -80,7 +80,7 @@
 				
 					<tr style="background-color:#AEB6BF;"> 
 					
-						<td><center><h2>Id</h2></center></td>
+						<td><center><h2>ID</h2></center></td>
 						<td><center><h2>Pais</h2></center></td>
 						<td><center><h2>Capital</h2></center></td>
 						<td><center><h2>Gentilicio</h2></center></td>						

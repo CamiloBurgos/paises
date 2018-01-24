@@ -1,6 +1,5 @@
     $(document).ready(function(){
    
-        //funcion para listar los cecostos
         var getlista = function (){
             var datax = {
                 "Accion":"listar"
@@ -28,7 +27,7 @@
                                 fila +='<div class="col-xs-8">';
                                 fila +='<div class="row"><div class="col-xs-12"><font size="5">'+data.datos[i].cc_nombre+'</font></div></div>';
                                 fila +='<div class="row"><div class="col-xs-12"><font size="4">Continente:'+data.datos[i].cc_categoria_nombre+'</font></div></div>';                      
-                                fila +='<div class="row"><div class="col-xs-12"><font size="5">Descripcion:'+textonuevo+'...</font></div></div>';
+                                fila +='<div class="row"><div class="col-xs-12"><font size="4">Descripcion:'+textonuevo+'...</font></div></div>';
                                 fila +='</div></div></a><br>';
                                 $("#listado").append(fila);
                 }

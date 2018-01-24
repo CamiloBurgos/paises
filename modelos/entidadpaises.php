@@ -1,5 +1,4 @@
 <?php
-
 class Paises{
 	private $cc_id;
 	private $cc_nombre;

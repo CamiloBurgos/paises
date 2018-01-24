@@ -2,6 +2,7 @@
 header('Access-Control-Allow-Origin: *');
 	require_once '../modelos/entidadpaises.php';
 	require_once '../modelos/modelopaises.php';
+	require_once '../modelos/modelociudad.php';
 
 	$modelp= new ModelPaises();
 
@@ -20,7 +21,11 @@ header('Access-Control-Allow-Origin: *');
             header('Content-type: application/json; charset=utf-8');
             echo json_encode($jsondata);            
             break;		
+		}		
   	}
-}
+	
+	
+		
+
 
 ?>
