@@ -15,11 +15,7 @@ header('Access-Control-Allow-Origin: *');
 					echo json_encode($jsondata);
 					break;
 
-        case 'obtener':
-					$jsondata = $modelp->obtener($_REQUEST['cid']);
-					header('Content-type: application/json; charset=utf-8');
-					echo json_encode($jsondata);            
-					break;		
+       	
 		}		
   	}
 

@@ -20,9 +20,9 @@ $(document).ready(function(){
                 }
 						for(var i=0; i<data.datos.length;i++){
 					
-                                fila ='<tr><td class="col-xs-2"><center><h4>'+data.datos[i].cid+'</h4></center></td>';
-                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].cpais+'</h4></center></td>';
-                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].nciudad+'</h4></center></td>';
+                                fila ='<tr><td class="col-xs-2"><center><h4>'+data.datos[i].id+'</h4></center></td>';
+                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].pais+'</h4></center></td>';
+                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].nombre+'</h4></center></td>';
                                 fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].gente+'</h4></center></td>';                      
                                 fila +='</tr><br>';
                                 $("#listado1").append(fila);

@@ -14,4 +14,5 @@ class Ciudad{
 	public function returnArray(){
 		return get_object_vars($this);
 	}
+}
 ?>
