@@ -20,11 +20,11 @@ $(document).ready(function(){
                 }
 						for(var i=0; i<data.datos.length;i++){
 					
-                                fila ='<tr><td class="col-xs-2"><center><h4>'+data.datos[i].id+'</h4></center></td>';
-                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].pais+'</h4></center></td>';
-                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].nombre+'</h4></center></td>';
-                                fila +='<td class="col-xs-2"><center><h4>'+data.datos[i].gente+'</h4></center></td>';                      
-                                fila +='</tr><br>';
+                                fila ='<tr><td>' + data.datos[i].id + '</td>';
+                                fila += '<td>' + data.datos[i].pais + '</td>';
+                                fila += '<td>' + data.datos[i].nombre + '</td>';
+                                fila += '<td>' + data.datos[i].gente + '</td>';                      
+                                fila += '</tr><br>';
                                 $("#listado1").append(fila);
                 }
             })

@@ -1,4 +1,5 @@
 <?php
+
 class Ciudad{
 	private $id;
 	private $pais;
